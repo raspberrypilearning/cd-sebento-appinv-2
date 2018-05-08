@@ -28,13 +28,23 @@ The `AfterSoundRecorded` block has a variable called `sound`. This is the file p
 
 ![](images/s7PlaySound.png)
 
-And you're done!
-
-+ Try out your new app and have some fun recording and playing back your own motivational messages!
++ Test out the app and have some fun recording and playing back your own motivational messages!
 
 --- challenge ---
 ## Challenge: Save the sound
 
 - See if you can use a File component to make the app remember the location of the sound file to play.
+
+--- hints ---
+
+--- hint ---
+
++ Use another File component and a separate file called something else, for example, `MotivationalMessage.txt`.
+
++ Use a `SaveFile` block instead of `AppendToFile` so that you always overwrite the previous text with the path to the new recording. 
+
+--- /hint ---
+
+--- /hints ---
 
 --- /challenge ---
