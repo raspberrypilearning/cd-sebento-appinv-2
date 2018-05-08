@@ -8,20 +8,25 @@ Right now, your app only saves information so long as the app is still running. 
 
 + Now go to Blocks and click on File1 to get the block `call File1.AppendToFile`. Add this to your code after the `set Label.Text to`.
 
-This block takes two **parameters**. The first, `text`, is the text that you want to store to a file. The second, `fileName` is the name of the file you want to use. The code will take the text you give it and add it onto the end of the text in the file. What's really handy is that if the file doesn't exist yet, the block will create it for you first.
+![](images/s5AppendToFile.png)
+
 
 --- collapse ---
 ---
-title: What are parameters?
+title: What does the new block do?
 ---
 
-A parameter is a piece of information that you give a block. Usually, the block will do something with that information.
+This block takes two **parameters**. A **parameter** is a piece of information that you give a block. Usually, the block will do something with that information.
+
+The first parameter, `text`, is the text that you want to store to a file. The second, `fileName` is the name of the file you want to use. 
+
+The code will take the text you give it and add it onto the end of the text in the file. What's really handy is that if the file doesn't exist yet, the block will create it for you first.
 
 --- /collapse ---
 
 + For the `fileName` parameter, attach a `""` block from Text, and type in `ExerciseTracker.txt`.
 
-+ For the `text` parameter, attach a `join` block, a `get mins` block, and another blank `""` Text block. Type `\n` into the blank text block, like this:
++ For the `text` parameter, attach a `join` block, a `get mins` block, and another blank `""` Text block. Type `\n` into the blank text block (make sure you use back slash and not forward slash!), like this:
 
 ![](images/s5JoinMinsNewline.png)
 
@@ -46,7 +51,7 @@ Now you've saved data to the file, you need to read that data when the app loads
 
 This call is **asynchronous**, which means it will go away and read the file and then tell you when it's done.
 
-+ From the File component, take out a `when File1.GotText do` block.
++ From File1, take out a `when File1.GotText` block.
 
 The `text` variable contains all the text from the file. You will use this to fill the **list** variable you created to collect the minutes. But first, you need to split it up to separate each line.
 
@@ -56,7 +61,7 @@ The `text` variable contains all the text from the file. You will use this to fi
 
 --- collapse ---
 ---
-title: How does splitting work
+title: How does splitting work?
 ---
 
 The `split` block takes one piece of text and splits it into several separate pieces.
@@ -81,7 +86,7 @@ Now you will count up all the minutes you just loaded and display the total.
 
 ![](images/s5ForEach.png)
 
-+ Inside this, add a `set global totalTime to`, and a `+` block with `get global TotalTime` on the left, as you did before to add something to the total. The only difference this time is that the variable you put on the right of the `+` will be the current `item` of the list.
++ Inside this, add a `set global totalTime to`, and a `+` block with `get global totalTime` on the left, as you did before to add something to the total. The only difference this time is that the variable you put on the right of the `+` will be the current `item` of the list.
 
 ![](images.s5ForEachItemIterate.png)
 

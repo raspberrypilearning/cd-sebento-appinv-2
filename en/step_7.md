@@ -1,10 +1,10 @@
 ## Record a message!
 
-Getting fit isn't easy. Sometimes it can be hard to motivate yourself to go and exercise. How about letting the user record a message that they can play whenever they need some extra motivation!
+Getting fit isn't easy. Sometimes it can be hard to motivate yourself to go and exercise. How about letting the user record a message that they can play whenever they need some extra motivation?
 
 + Go to the Designer and add two more Buttons to your app. Set the text of them to `Play motivational message` and `Record`, or something similar.
 
-+ Then, from Media, add a **Sound** and a **SoundRecorder** component. Just like the File component, these won't be visible on the screen.
++ Then, from **Media**, add a **Sound** and a **SoundRecorder** component. Just like the File component, these won't be visible on the screen.
 
 + In Blocks, add a `when Button.TouchDown` and a `when Button.TouchUp` block for the "Record" button. Instead of detecting the usual click of the button, you're going to start recording when the user presses and holds the button and stop recording when they stop pressing.
 

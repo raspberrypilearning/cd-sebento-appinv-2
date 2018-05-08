@@ -2,13 +2,15 @@
 
 + Create a new project and give it a name such as `GetFit`.
 
-+ Find the TextBox component in the Palette (it's in **User Interface**) and add it to your app, along with a Label and a Button. Add a label, two textboxes and a button.
++ Click on Screen1 under Components and change the Title property to `Track your exercise here!`.
 
-+ Change the **Text** property of the label to `Track your exercise here!` and of the button to `Enter`.
++ Find the TextBox component in the Palette (it's in **User Interface**) and add it to your app, along with a Button.
 
-+ To arrange the textbox and the button side by side, drag a **HorizontalArrangement** onto the screen and place the components inside it.
++ Change the **Text** property of the button to `Enter`.
 
-![](images/s3HorizontalComponents.png)
++ To arrange the components side by side, drag a **HorizontalArrangement** onto the screen (you'll find it in **Layout**) and drag the textbox and the button into it.
+
+![](images/s3Horizontal.png)
 
 + Find the **Hint** property for the textbox and type `Minutes`. This will appear faintly in the textbox if the user hasn't typed anything in yet, so they know what to type.
 
@@ -16,23 +18,27 @@
 
 ![](images/s3HintNumsOnly.png)
 
-So the user can type in the number of minutes they exercised for. Now you want to save that information when they press the button.
+Great! The user can type in the number of minutes they exercised for. Now you want to save that information when they press the button.
 
-+ The first thing you'll need is to create a **local** variable to store the text value in. Grab the `initialise local name to` block from **Variables** and slot it into a `when Button Click` block.
++ Switch to the Blocks and take out a `when Button.Click` block.
+
++ The first thing you'll need is to create a **local** variable to store the text value in. Grab the `initialise local name to` block from **Variables** and slot it into the `when Button Click`.
 
 + Then click where it says `name` and instead type `mins` to name your local variable.
 
-![](images/s3LocalVars.png)
+![](images/s3LocalVar.png)
 
 + Take out a `Textbox.text` block and attach it onto the variable to store the text.
 
-Now, this only lets you save one exercise session – but you want to store more than that! So, you'll create a **list**.
+Now that you've retrieved the text you're going to create a **list** to put it in. After all, you want to be able to record lots of exercise sessions!
 
 + At the top of your code, add an `initialize global name to` block, naming it `minutesList`. Then find the `create empty list` block from **Lists** and use it to initialise your list.
 
-![](images/s3CreateEmptyLists.png)
+![](images/s3CreateEmptyList.png)
 
 + From **Lists**, take the block `add items to list` and put it into your local variable block. 
+
+![](images/s3AddItemsBlock.png)
 
 You need to attach two things to this block: the list you want to add something to, and the "something" you want to add: that is,  the **item**.
 
@@ -40,7 +46,9 @@ You need to attach two things to this block: the list you want to add something 
 
 ![](images/s3GetGlobalList.png)
 
-+ Next do the same with the local variable, `mins`, to attach a `get mins` block onto the **item** part of `add items to list`.
++ Then do the same with the local variable, `mins`, to attach a `get mins` block onto the **item** part of `add items to list`.
 
 ![](images/s3AddItemToList.png)
+
+On the next card you'll add all the list items together to work out the total amount of exercise you've done!
 

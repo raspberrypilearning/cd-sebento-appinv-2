@@ -6,7 +6,7 @@
 
 ![](images/s4TotalTimeInit.png)
 
-Now every time you save a new time, you will add it onto the total.
+Every time you save a new time, you are going to add it onto the total.
 
 + Hover over the `totalTime` variable and grab a `set global totalTime to` block. Attach it underneath the `add items to list`.
 
@@ -27,7 +27,7 @@ You find the `get` and `set` blocks for a variable by hovering the mouse over th
 
 You can also find use the `get` and `set` blocks located in Variables, and click the little arrow to choose your variable.
 
-![](s4GetSetBlank.png)
+![](images/s4GetSetBlank.png)
 
 --- /collapse ---
 
@@ -37,8 +37,12 @@ All that's left is to display the total so the user can see it!
 
 + Change the Text property of the second label so that it's blank, and make a note of the name of this label (for example, Label2) so that you can set it to the total in your code!
 
-+ If you want to, change the size and colour of the labels. I've made mine blue, and I changed the FontSize of the second label to 50!
++ If you want to, change the size and colour of the labels. I've made mine blue and checked FontBold to make them bold, and I changed the FontSize of the second label to 50!
 
 + Switch back to Blocks and add a `set Label.Text to` block to your code, together with a `get global totalTime` (choose the label you noted above!).
 
-![](images/s4DisplayTotalCode)
+![](images/s4DisplayTotalTime.png)
+
+Here's what your code should look like:
+
+![](images/s4DisplayTotalCode.png)
