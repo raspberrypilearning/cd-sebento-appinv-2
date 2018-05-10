@@ -4,7 +4,7 @@
 
 + Click on Screen1 under Components and change the Title property to `Track your exercise here!`.
 
-+ Find the TextBox component in the Palette (it's in **User Interface**) and add it to your app, along with a Button.
++ Find the TextBox component in the Palette (under **User Interface**) and add it to your app, along with a Button.
 
 + Change the **Text** property of the button to `Enter`.
 
@@ -28,7 +28,7 @@ Great! The user can type in the number of minutes they exercised for. Now you wa
 
 ![](images/s3LocalVar.png)
 
-+ Take out a `Textbox.text` block and attach it onto the variable to store the text.
++ Take out a `Textbox.Text` block and attach it onto the `initialise local mins` block to store the text.
 
 Now that you've retrieved the text you're going to create a **list** to put it in. After all, you want to be able to record lots of exercise sessions!
 

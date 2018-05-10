@@ -31,3 +31,5 @@ And your app is complete!
 + You can either use the same file (with some extra `join` and `split` code) or a separate one.
 
 --- /challenge ---
+
+You can see an example of this app on App Inventor at [dojo.soy/intermedapp](http://dojo.soy/intermedapp){:target="_blank"} 
