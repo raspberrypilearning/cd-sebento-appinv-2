@@ -1,4 +1,4 @@
-## Calculate the total
+## Calculating the total
 
 + Create another global variable called `totalTime`.
 
