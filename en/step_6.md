@@ -1,4 +1,4 @@
-## Reset
+## Resetting
 
 If you're anything like me, you might want a way of deleting all the previously entered data and starting the tracking again at zero. Let's add a button to let you do that!
 
