@@ -1,6 +1,6 @@
-title: Intermediate App Inventor
+title: Intermediate App Inventor Sushi Cards
 hero_image: images/banner.png
-description: Make an app that lets you track how much exercise you've done
+description: Make an app that tracks how much exercise you do
 version: 1
 listed: false
 copyedit: false
@@ -9,8 +9,8 @@ steps:
   - title: Introduction
   - title: What you will need
   - title: Recording exercise
-  - title: Calculate the total
+  - title: Calculating the total
   - title: Saving the information
-  - title: Reset
+  - title: Resetting
   - title: Record a message!
-  - title: Display the exercise history
+  - title: Displaying the exercise history
