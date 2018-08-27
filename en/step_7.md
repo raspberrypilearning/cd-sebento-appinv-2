@@ -1,51 +1,35 @@
-## Record a message!
+## Displaying the exercise history
 
-Getting fit isn't easy: sometimes it can be hard to motivate yourself to go and exercise. How about letting the user record a message that they can play whenever they need some extra motivation?
+At the moment your app only displays the total minutes exercised, but since you've got the list of all the individual sessions, why not show that as well?
 
-+ Go to the Designer view and add two more Buttons to your app. Set their labels to `Play motivational message` and `Record`, or something similar.
++ Go to the Designer view, and add a **ListView** from **User Interface**.
 
-+ Then, from **Media**, add a **Sound** and a **SoundRecorder** component. Just like the File component, these won't be visible on the screen.
++ If you want, you can also add a label above the list that says something like `Exercise history:`.
 
-+ In Blocks, add a `when Button.TouchDown` block and a `when Button.TouchUp` block for the `Record` button. This time, you're not going to detect the usual click of the button. Instead, you're going to start recording when the user presses and holds the button, and you'll stop recording when they stop pressing.
+As you might have guessed, a ListView displays a list of things. Similar to how you set the Text property of a Label to some text, you set the **Elements** property of a ListView to a list. You will do this in two places in your code.
 
-+ Add `call SoundRecorder.Start` to the `TouchDown` block, and `call SoundRecorder.Stop` to the `TouchUp` block, like this:
+First, you need to update the ListView whenever the user enters a new exercise time. 
 
-![](images/s7StartStop.png)
++ In the `Button.Click` for the `Enter` button, add a `set ListView.Elements to` block and a `get global minutesList` block below `AppendToFile`.
 
-Now you can record sound, you need to set up the Sound component to play it!
+![](images/s8UpdateListViewEls.png)
 
-+ Drag out the `when SoundRecorder.AfterSoundRecorded` block.
+Secondly, you need to update the ListView whenever you load the list file.
 
-+ In the Sound component, find the `set Sound1.Source to` block and put that inside the block you just took out.
++ Find your `File1.GotFile` code, and add `set ListView.Elements to` and `get global minutesList` (the same code as above) right below the `set global minutesList to` block.
 
-The `AfterSoundRecorded` block has a variable called `sound`. This is the where you tell the block where for find the sound file you've recorded.
+![](images/s8SetListViewEls.png)
 
-+ Hover over the `sound` variable and take the `get sound` block to attach on as the source for the Sound component:
-
-![](images/s7AfterRecordSetSource.png)
-
-+ Finally, take out a `Button.Click` block for the `Play` button. In it, put a `call Sound1.Play` from the Sound component.
-
-![](images/s7PlaySound.png)
-
-+ Test out the app and have some fun recording and playing back your own motivational messages!
+And your app is complete!
 
 --- challenge ---
 
-## Challenge: save the sound
+## Challenge: track the type of exercise
 
-- See if you can use a File component to make the app remember the location of the sound file to play.
++ How about adding another TextBox that lets the user also record what kind of exercise they did? You'll have to think about what extra code you'll need, such as lists and loops, and how to store the new information in a file.
 
---- hints ---
-
---- hint ---
-
-+ Use another File component and a separate file called something else, for example `MotivationalMessage.txt`.
-
-+ Use a `SaveFile` block instead of `AppendToFile`, so that you always overwrite the previous file with the new recording. 
-
---- /hint ---
-
---- /hints ---
++ You can either use the same file (with some extra `join` and `split` code), or a separate one.
 
 --- /challenge ---
+
+You can see an example of this app on App Inventor at [dojo.soy/intermedapp](http://dojo.soy/intermedapp){:target="_blank"}.

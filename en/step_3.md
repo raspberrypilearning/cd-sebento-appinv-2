@@ -1,53 +1,48 @@
-## Recording exercise
+## Calculating the total
 
-+ Create a new project and give it a name, for example `GetFit`.
++ Create another global variable called `totalTime`.
 
-+ Click on Screen1 under Components and change the Title property to `Track your exercise here!`.
++ Attach the `0` block from Math to initialise the variable to `0`.
 
-+ Find the TextBox component in the Palette (under **User Interface**) and add it to your app, along with a Button.
+![](images/s4TotalTimeInit.png)
 
-+ Change the **Text** property of the button to `Enter`.
+Every time you save a new time, you are going to add it to the value of `totalTime`.
 
-+ To arrange the components side by side, drag a **HorizontalArrangement** onto the screen (you'll find it in **Layout**) and drag the TextBox and Button into it.
++ Hover over the `totalTime` variable and grab a `set global totalTime to` block. Attach it below the `add items to list` block.
 
-![](images/s3Horizontal.png)
++ From Math, take the `+` block and attach it to `set global totalTime to`.
 
-+ Find the **Hint** property for the TextBox and type `Minutes`. This will appear faintly in the textbox if the user hasn't typed anything in yet, so they know what to type.
+![](images/s4PlusBlock.png)
 
-+ Check the box that says 'NumbersOnly' so that only a number can be entered in the TextBox.
++ On the left side of the `+`, plug in a `get global totalTime` block. On the right side, plug in `get mins`. 
 
-![](images/s3HintNumsOnly.png)
+--- collapse ---
+---
+title: I can't find the blocks!
+---
 
-Great! The user can type in the number of minutes they exercised for. Now you want to save that information when they press the button.
+You can find the `get` and `set` blocks for a variable by hovering the mouse over the name of the variable in the orange `initialise` block.
 
-+ Switch to the Blocks and take out a `when Button.Click` block.
+![](images/s4BlocksForVar.png)
 
-+ The first thing you'll need is to create a **local** variable to store the TextBox value in. Grab the `initialise local name to` block from Variables, and slot it into the `when Button Click` block.
+You can also use the `get` and `set` blocks located in Variables, and then click the little arrow in each block to choose your variable.
 
-+ Then click where it says `name` and instead type `mins` to name your local variable.
+![](images/s4GetSetBlank.png)
 
-![](images/s3LocalVar.png)
+--- /collapse ---
 
-+ Take out a `Textbox.Text` block and attach it onto the `initialise local mins` block to store what's been typed into the TextBox.
+Now, display the total so the user can see it!
 
-Now that you've retrieved this information, you're going to create a **list** to put it in. After all, you want to be able to record lots of exercise sessions!
++ Go back to the Designer view and add two more labels to your app. Set the Text property of the first one to `Total minutes exercised:`
 
-+ At the top of your code, add an `initialize global name to` block, and name it `minutesList`. Then find the `create empty list` block from Lists and use it to initialise your list.
++ Change the Text property of the second label so that it's blank, and make a note of this label's name (for example, Label2) so that you can set it to the total in your code!
 
-![](images/s3CreateEmptyList.png)
++ If you want to, change the size and colour of the labels. I've made mine blue and checked **FontBold** to make them bold, and I changed the **FontSize** of the second label to `50`!
 
-+ From Lists, take the block `add items to list` and put it into your local variable block. 
++ Switch back to Blocks and add a `set Label.Text to` block to your code, together with a `get global totalTime` block (choose the label name you made a note of above!).
 
-![](images/s3AddItemsBlock.png)
+![](images/s4DisplayTotalTime.png)
 
-You need to attach two things to this block: the list you want to add something to, and the 'something' you want to add, meaning the **item**.
+Here's what your code should look like:
 
-+ Hover over the name of your global list variable and grab the `get global minutesList` block that appears. Connect this to the `list` attachment of the `add items to list` block.
-
-![](images/s3GetGlobalList.png)
-
-+ Then do the same with the local variable, `mins`, to attach a `get mins` block to the **item** part of `add items to list`.
-
-![](images/s3AddItemToList.png)
-
-On the next card, you'll add all the list items together to work out the total amount of exercise you've done!
+![](images/s4DisplayTotalCode.png)

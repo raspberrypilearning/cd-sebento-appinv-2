@@ -9,7 +9,10 @@ These cards are going to show you how to use App Inventor to make an app that tr
  
 ![](images/fitnessAppScreenshot.png)
 
-### What you will learn
+--- collapse ---
+---
+title: What you will learn
+---
 
 + Taking text input from the user and display it
 + Storing information in a list
@@ -18,3 +21,21 @@ These cards are going to show you how to use App Inventor to make an app that tr
 + Loading and displaying information from a file
 + Making your own procedures
 + Using the phone's sound recorder and play back a sound you've recorded
+
+--- /collapse ---
+
+--- collapse ---
+---
+title: What you will need
+---
+
+### Hardware
+
++ A computer capable of accessing App Inventor
++ An internet connection
+
+**Optional:**
+
++ An Android phone or tablet
+
+--- /collapse ---
