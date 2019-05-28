@@ -1,43 +1,51 @@
-## Resetting
+## Record a message!
 
-If you're anything like me, you might want a way of deleting all the previously entered data and starting the tracking again at zero. Let's add a button to let you do that!
+Getting fit isn't easy: sometimes it can be hard to motivate yourself to go and exercise. How about letting the user record a message that they can play whenever they need some extra motivation?
 
-+ In the Designer view, add a Button. Change its label to `Reset`.
++ Go to the Designer view and add two more Buttons to your app. Set their labels to `Play motivational message` and `Record`, or something similar.
 
-+ Go to Blocks and add a `when Button Click` block for the new button.
++ Then, from **Media**, add a **Sound** and a **SoundRecorder** component. Just like the File component, these won't be visible on the screen.
 
-+ Into this block, add `call File1.Delete` with a Text block giving the file name `ExerciseTracker.txt`.
++ In Blocks, add a `when Button.TouchDown` block and a `when Button.TouchUp` block for the `Record` button. This time, you're not going to detect the usual click of the button. Instead, you're going to start recording when the user presses and holds the button, and you'll stop recording when they stop pressing.
 
-![](images/s6FileDelete.png)
++ Add `call SoundRecorder.Start` to the `TouchDown` block, and `call SoundRecorder.Stop` to the `TouchUp` block, like this:
 
-Now you will create a brand-new block of your own!
+![](images/s7StartStop.png)
 
-+ Click on **Procedures** in the Built-in blocks and drag out a `to procedure do` block.
+Now you can record sound, you need to set up the Sound component to play it!
 
-![](images/s6NewProc.png)
++ Drag out the `when SoundRecorder.AfterSoundRecorded` block.
 
-+ Click the `procedure` label and change it to `resetEverything`.
++ In the Sound component, find the `set Sound1.Source to` block and put that inside the block you just took out.
 
---- collapse ---
----
-title: What is a procedure?
----
+The `AfterSoundRecorded` block has a variable called `sound`. This is the where you tell the block where for find the sound file you've recorded.
 
-A procedure is a bunch of code that you can **reuse** easily. 
++ Hover over the `sound` variable and take the `get sound` block to attach on as the source for the Sound component:
 
-Instead of duplicating the same blocks in several places, you put all of them into one block called a procedure. Then you can use just that one block whenever you want to run these blocks!
+![](images/s7AfterRecordSetSource.png)
 
-You can give a procedure any name you want.
++ Finally, take out a `Button.Click` block for the `Play` button. In it, put a `call Sound1.Play` from the Sound component.
 
---- /collapse ---
+![](images/s7PlaySound.png)
 
-+ Inside the `resetEverything` block, add blocks to set the global `minutesList` to a new empty list, set the global `totalTime` to `0`, and display the new total:
++ Test out the app and have some fun recording and playing back your own motivational messages!
 
-![](images/s6ResetProc.png)
+--- challenge ---
 
-+ Finally, in the `when Button Click` block of the button you've just made, add the block `call resetEverything` from Procedures.
+## Challenge: save the sound
 
-![](images/s6CallReset.png)
+- See if you can use a File component to make the app remember the location of the sound file to play.
 
-Now you should be able to clear all the recorded exercise by clicking the new button!
+--- hints ---
 
+--- hint ---
+
++ Use another File component and a separate file called something else, for example `MotivationalMessage.txt`.
+
++ Use a `SaveFile` block instead of `AppendToFile`, so that you always overwrite the previous file with the new recording. 
+
+--- /hint ---
+
+--- /hints ---
+
+--- /challenge ---
