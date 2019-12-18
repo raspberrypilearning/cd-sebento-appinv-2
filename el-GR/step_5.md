@@ -4,7 +4,7 @@ If you're anything like me, you might want a way of deleting all the previously 
 
 + Στην προβολή Designer, πρόσθεσε ένα Button. Άλλαξε την ετικέτα του σε `Επαναφορά`.
 
-+ Go to Blocks and add a `when Button Click` block for the new button.
++ Πήγαινε στην προβολή Blocks και πρόσθεσε το `when Button Click` μπλοκ για το νέο κουμπί.
 
 + Σε αυτό το μπλοκ, πρόσθεσε `call File1.Delete` με ένα μπλοκ Text δίνοντας το όνομα του αρχείου `ExerciseTracker.txt`.
 
@@ -31,7 +31,7 @@ title: What is a procedure?
 
 --- /collapse ---
 
-+ Inside the `resetEverything` block, add blocks to set the global `minutesList` to a new empty list, set the global `totalTime` to `0`, and display the new total:
++ Μέσα στο `resetEverything` μπλοκ, πρόσθεσε μπλοκ για να ορίσεις την καθολική μεταβλητή `minutesList` ως μια νέα κενή λίστα, να ορίσεις την καθολική μεταβλητή `totalTime` ως `0`, και να εμφανίσεις το νέο σύνολο:
 
 ![](images/s6ResetProc.png)
 
