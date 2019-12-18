@@ -1,4 +1,4 @@
-## Displaying the exercise history
+## Εμφάνιση του ιστορικού άσκησης
 
 At the moment your app only displays the total minutes exercised, but since you've got the list of all the individual sessions, why not show that as well?
 
