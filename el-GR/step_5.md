@@ -1,6 +1,6 @@
 ## Επαναφορά
 
-If you're anything like me, you might want a way of deleting all the previously entered data and starting the tracking again at zero. Ας προσθέσεις ένα κουμπί για να το κάνεις αυτό!
+Αν μου μοιάζεις έστω και λίγο, ίσως να ψάχνεις να βρεις έναν τρόπο για να σβήσεις όλα τα δεδομένα που έχεις προηγουμένως εισαγάγει και να ξεκινήσεις την παρακολούθηση από το μηδέν. Ας προσθέσεις ένα κουμπί για να το κάνεις αυτό!
 
 + Στην προβολή Designer, πρόσθεσε ένα Button. Άλλαξε την ετικέτα του σε `Επαναφορά`.
 
@@ -20,7 +20,7 @@ If you're anything like me, you might want a way of deleting all the previously 
 
 --- collapse ---
 ---
-title: What is a procedure?
+title: Τι είναι μια διαδικασία;
 ---
 
 Η διαδικασία είναι ένα σύνολο κώδικα που μπορείς **επαναχρησιμοποιείς** εύκολα.
