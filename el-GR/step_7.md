@@ -6,7 +6,7 @@
 
 + Εάν θέλεις, μπορείς επίσης να προσθέσεις μια ετικέτα πάνω από τη λίστα που να λέει κάτι σαν `Ιστορικό άσκησης:`.
 
-Όπως ίσως έχεις μαντέψει, ένα ListView εμφανίζει μια λίστα με πράγματα. Similar to how you set the Text property of a Label to some text, you set the **Elements** property of a ListView to a list. Θα το κάνεις αυτό σε δύο μέρη στον κώδικά σου.
+Όπως ίσως έχεις μαντέψει, ένα ListView εμφανίζει μια λίστα με πράγματα. Παρόμοια με τον τρόπο που ορίζεις στην ιδιότητα Text ενός Label κάποιο κείμενο, ορίζεις στην ιδιότητα **Elements** ενός ListView μια λίστα. Θα το κάνεις αυτό σε δύο μέρη στον κώδικά σου.
 
 Πρώτον, πρέπει να ενημερώνεις το ListView κάθε φορά που ο χρήστης εισάγει νέο χρόνο άσκησης.
 
@@ -16,7 +16,7 @@
 
 Δεύτερον, πρέπει να ενημερώσεις το ListView όποτε φορτώνεις το αρχείο λίστας.
 
-+ Find your `File1.GotFile` code, and add `set ListView.Elements to` and `get global minutesList` (the same code as above) right below the `set global minutesList to` block.
++ Βρες τον κώδικα `File1.GotText` και πρόσθεσε `set ListView.Elements to` και `get global minutesList` (τον ίδιο κώδικα όπως παραπάνω) ακριβώς κάτω από το `set global minutesList to` μπλοκ.
 
 ![](images/s8SetListViewEls.png)
 
