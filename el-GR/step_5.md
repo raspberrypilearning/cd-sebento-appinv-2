@@ -1,33 +1,33 @@
-## Resetting
+## Επαναφορά
 
-If you're anything like me, you might want a way of deleting all the previously entered data and starting the tracking again at zero. Let's add a button to let you do that!
+If you're anything like me, you might want a way of deleting all the previously entered data and starting the tracking again at zero. Ας προσθέσεις ένα κουμπί για να το κάνεις αυτό!
 
-+ In the Designer view, add a Button. Change its label to `Reset`.
++ Στην προβολή Designer, πρόσθεσε ένα Button. Άλλαξε την ετικέτα του σε `Επαναφορά`.
 
 + Go to Blocks and add a `when Button Click` block for the new button.
 
-+ Into this block, add `call File1.Delete` with a Text block giving the file name `ExerciseTracker.txt`.
++ Σε αυτό το μπλοκ, πρόσθεσε `call File1.Delete` με ένα μπλοκ Text δίνοντας το όνομα του αρχείου `ExerciseTracker.txt`.
 
 ![](images/s6FileDelete.png)
 
-Now you will create a brand-new block of your own!
+Τώρα θα δημιουργήσεις ένα ολοκαίνουργιο δικό σου μπλοκ εντολών!
 
-+ Click on **Procedures** in the Built-in blocks and drag out a `to procedure do` block.
++ Κάνε κλικ στο **Procedures** στα ενσωματωμένα μπλοκ και σύρε έξω ένα `to procedure do`.
 
 ![](images/s6NewProc.png)
 
-+ Click the `procedure` label and change it to `resetEverything`.
++ Κάνε κλικ στην ετικέτα `procedure` και άλλαξέ την σε `resetEverything`.
 
 --- collapse ---
 ---
 title: What is a procedure?
 ---
 
-A procedure is a bunch of code that you can **reuse** easily.
+Η διαδικασία είναι ένα σύνολο κώδικα που μπορείς **επαναχρησιμοποιείς** εύκολα.
 
-Instead of duplicating the same blocks in several places, you put all of them into one block called a procedure. Then you can use just that one block whenever you want to run these blocks!
+Αντί να αντιγράφεις τα ίδια μπλοκ σε διάφορα σημεία, τα βάζεις όλα σε ένα μπλοκ που ονομάζεται διαδικασία. Στη συνέχεια μπορείς να χρησιμοποιήσεις ακριβώς αυτό το ένα μπλοκ κάθε φορά που θέλεις να εκτελέσεις αυτά τα μπλοκ!
 
-You can give a procedure any name you want.
+Μπορείς να δώσεις σε μια διαδικασία οποιοδήποτε όνομα θέλεις.
 
 --- /collapse ---
 
@@ -35,9 +35,9 @@ You can give a procedure any name you want.
 
 ![](images/s6ResetProc.png)
 
-+ Finally, in the `when Button Click` block of the button you've just made, add the block `call resetEverything` from Procedures.
++ Τέλος, στο μπλοκ `Button Click` του κουμπιού που μόλις δημιούργησες, πρόσθεσε το block `call resetEverything` από τις Procedures.
 
 ![](images/s6CallReset.png)
 
-Now you should be able to clear all the recorded exercise by clicking the new button!
+Τώρα θα πρέπει να μπορείς να καθαρίσεις όλη την καταγεγραμμένη άσκηση κάνοντας κλικ στο νέο κουμπί!
 
