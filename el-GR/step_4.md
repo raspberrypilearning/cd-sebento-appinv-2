@@ -20,13 +20,13 @@ title: What does the new block do?
 
 Η πρώτη παράμετρος, `text`, είναι το κείμενο που θέλεις να αποθηκεύσεις σε ένα αρχείο. Η δεύτερη, `fileName` είναι το όνομα του αρχείου που θέλεις να χρησιμοποιήσεις για την αποθήκευση.
 
-Ο κώδικας θα πάρει το κείμενο που του δίνεις και θα το προσθέσει στο τέλος του κειμένου στο αρχείο. The really handy thing is that if the file doesn't exist yet, the block will create it for you first.
+Ο κώδικας θα πάρει το κείμενο που του δίνεις και θα το προσθέσει στο τέλος του κειμένου στο αρχείο. Το πραγματικά βολικό είναι ότι αν το αρχείο δεν υπάρχει ακόμα, την πρώτη φορά το μπλοκ θα το δημιουργήσει.
 
 --- /collapse ---
 
-+ For the `fileName` parameter, attach a `""` block from Text, and type in `ExerciseTracker.txt`.
++ Για την παράμετρο `fileName`, κούμπωσε ένα μπλοκ `""` από το Text και πληκτρολόγησε `ExerciseTracker.txt`.
 
-+ For the `text` parameter, attach a `join` block, a `get mins` block, and another blank `""` Text block. Type `\n` into the blank text block (make sure you use a backslash ``\` and **not** a forward slash``/`).
++ Για την `text` παράμετρο, κούμπωσε ένα `join` μπλοκ, ένα `get mins` μπλοκ, και ένα ακόμη κενό `«»` μπλοκ κειμένου. Type `\n` into the blank text block (make sure you use a backslash ``\` and **not** a forward slash``/`).
 
 ![](images/s5JoinMinsNewline.png)
 
@@ -53,7 +53,7 @@ title: What did I just type?
 
 + Από την επιλογή File1 στ' αριστερά, βγάλε ένα `when File1.GotText` μπλοκ.
 
-Η μεταβλητή `text` περιέχει όλο το κείμενο από το αρχείο. Θα το χρησιμοποιήσεις για να γεμίσεις τη μεταβλητή **list** που δημιούργησες για τη συλλογή των λεπτών. But first, you need to split it up to separate each line.
+Η μεταβλητή `text` περιέχει όλο το κείμενο από το αρχείο. Θα το χρησιμοποιήσεις για να γεμίσεις τη μεταβλητή **list** που δημιούργησες για τη συλλογή των λεπτών. Αλλά πρώτα, πρέπει να το διασπάσεις για να διαχωρίσεις κάθε γραμμή.
 
 + Πρόσθεσε τα παρακάτω μπλοκ μέσα στο `GotText`:
 
@@ -70,7 +70,7 @@ title: How does splitting work?
 
 Αυτό που βάζεις στο `at` αποφασίζει για το πώς γίνεται η διάσπαση του κειμένου.
 
-It searches the text for the value in the `at` block, and each time it finds it, it 'chops off' another piece of the text. Το κείμενο που αντιστοιχεί στην τιμή του `at` διαγράφεται στη συνέχεια.
+Αναζητά το κείμενο για την τιμή στο μπλοκ `at` και κάθε φορά που το βρίσκει, «κόβει» ένα ακόμη κομμάτι του κειμένου. Το κείμενο που αντιστοιχεί στην τιμή του `at` διαγράφεται στη συνέχεια.
 
 Αυτό που παίρνεις πίσω είναι μια λίστα που περιέχει μια δέσμη ξεχωριστών κομματιών κειμένου!
 
