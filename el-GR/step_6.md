@@ -32,7 +32,7 @@
 
 --- challenge ---
 
-## Challenge: save the sound
+## Πρόκληση: Αποθήκευσε τον ήχο
 
 - See if you can use a File component to make the app remember the location of the sound file to play.
 
@@ -40,9 +40,9 @@
 
 --- hint ---
 
-+ Use another File component and a separate file called something else, for example `MotivationalMessage.txt`.
++ Χρησιμοποίησε ένα άλλο στοιχείο File και ένα ξεχωριστό αρχείο με διαφορετικό όνομα, για παράδειγμα `MotivationalMessage.txt`.
 
-+ Use a `SaveFile` block instead of `AppendToFile`, so that you always overwrite the previous file with the new recording.
++ Χρησιμοποίησε ένα μπλοκ `SaveFile` αντί για το `AppendToFile`, έτσι ώστε πάντα να αντικαθίσταται το προηγούμενο αρχείο με τη νέα εγγραφή.
 
 --- /hint ---
 
