@@ -39,10 +39,10 @@ title: I can't find the blocks!
 
 + Αν θέλεις άλλαξε το μέγεθος και το χρώμα των labels. Εγώ για παράδειγμα άλλαξα το χρώμα σε μπλε και τσέκαρα την επιλογή **FontBold** για να κάνω έντονη γραφή, και άλλαξα το **FontSize** του δεύτερου label σε `50`!
 
-+ Switch back to Blocks and add a `set Label.Text to` block to your code, together with a `get global totalTime` block (choose the label name you made a note of above!).
++ Πήγαινε ξανά στην προβολή Blocks και πρόσθεσε το μπλοκ `set Label.Text to` στον κώδικά σου, μαζί με το `get global totalTime` μπλοκ (επίλεξε το όνομα του label που είχες σημειώσει παραπάνω!).
 
 ![](images/s4DisplayTotalTime.png)
 
-Here's what your code should look like:
+Έτσι πρέπει να φαίνεται ο νέος σου κώδικας:
 
 ![](images/s4DisplayTotalCode.png)
