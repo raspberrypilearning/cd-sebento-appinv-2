@@ -86,13 +86,13 @@ It searches the text for the value in the `at` block, and each time it finds it,
 
 ![](images/s5ForEach.png)
 
-+ Μέσα σε αυτό, πρόσθεσε ένα `set global totalTime to` μπλοκ, και στη συνέχεια ένα `+` μπλοκ με `get global totalTime` στα αριστερά του. Θυμήσου, το έκανες αυτό και πριν για να προσθέσεις κάτι στο σύνολο. The only difference this time around is that the variable you put on the right of the `+`: the current `item` of the list.
++ Μέσα σε αυτό, πρόσθεσε ένα `set global totalTime to` μπλοκ, και στη συνέχεια ένα `+` μπλοκ με `get global totalTime` στα αριστερά του. Θυμήσου, το έκανες αυτό και πριν για να προσθέσεις κάτι στο σύνολο. Η μόνη διαφορά αυτή τη φορά είναι ότι η μεταβλητή που βάζεις στα δεξιά του `+` είναι: το τρέχον `item` (στοιχείο) της λίστας.
 
 ![](images.s5ForEachItemIterate.png)
 
-+ Finally, add `set Label.Text to` the and `get global totalTime` block as before.
++ Τέλος, πρόσθεσε το `set Label.Text to` και το `get global totalTime` μπλοκ όπως πριν.
 
-+ Here's what your `GotText` block should look like now. Test out your app to make sure it all works!
++ Να πώς θα πρέπει να μοιάζει τώρα το μπλοκ `GotText`. Δοκίμασε την εφαρμογή σου για να βεβαιωθείς ότι όλα λειτουργούν!
 
 ![](images/s5GotTextAll.png)
 
