@@ -1,41 +1,41 @@
-## Introduction
+## Εισαγωγή
 
-These cards are going to show you how to use App Inventor to make an app that tracks how much exercise you've done.
+Αυτές οι κάρτες θα σου δείξουν πώς να χρησιμοποιήσεις το App Inventor για να δημιουργήσεις μια εφαρμογή που παρακολουθεί την άσκηση που έχεις κάνει.
 
 
-### What you will make
+### Τι θα φτιάξεις
 
- * You'll end up with something that looks like this:
+ * Θα καταλήξεις με κάτι που μοιάζει με αυτό:
 
 ![](images/fitnessAppScreenshot.png)
 
 --- collapse ---
 ---
-title: What you will learn
+title: Τι θα μάθεις
 ---
 
 + Taking text input from the user and display it
-+ Storing information in a list
-+ Using a loop to read the elements of a list
-+ Saving information to a file on the phone
-+ Loading and displaying information from a file
-+ Making your own procedures
-+ Using the phone's sound recorder and play back a sound you've recorded
++ Αποθήκευση πληροφοριών σε μια λίστα
++ Χρήση βρόχου για διάβασμα των στοιχείων μιας λίστας
++ Αποθήκευση πληροφοριών σε ένα αρχείο στο τηλέφωνο
++ Φόρτωση και προβολή πληροφοριών από ένα αρχείο
++ Δημιουργώντας τις δικές σου διαδικασίες
++ Χρησιμοποίησε τη συσκευή εγγραφής ήχου του τηλεφώνου και κάνε αναπαραγωγή ενός ήχου που έχεις καταγράψει
 
 --- /collapse ---
 
 --- collapse ---
 ---
-title: What you will need
+title: Τι θα χρειαστείς
 ---
 
-### Hardware
+### Υλικό (Hardware)
 
-+ A computer capable of accessing App Inventor
-+ An internet connection
++ Ένας υπολογιστής που έχει πρόσβαση στο App Inventor
++ Σύνδεση στο διαδίκτυο
 
-**Optional:**
+**Προαιρετικά:**
 
-+ An Android phone or tablet
++ Ένα τηλέφωνο ή tablet Android
 
 --- /collapse ---
