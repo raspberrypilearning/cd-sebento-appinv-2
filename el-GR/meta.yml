@@ -1,7 +1,7 @@
 ---
 title: Exercise tracker
 hero_image: images/banner.png
-description: Make an app that tracks how much exercise you do
+description: Δημιούργησε μια εφαρμογή που θα παρακολουθεί πόση άσκηση κάνεις
 theme: green
 listed: true
 copyedit: true
@@ -15,16 +15,16 @@ version: 3.0.0
 last_tested: "2018-04-30"
 steps:
   - 
-    title: Introduction
+    title: Εισαγωγή
   - 
-    title: Recording exercise
+    title: Καταγραφή άσκησης
   - 
-    title: Calculating the total
+    title: Υπολογισμός του συνόλου
   - 
-    title: Saving the information
+    title: Αποθήκευση των πληροφοριών
   - 
-    title: Resetting
+    title: Επαναφορά
   - 
-    title: Record a message!
+    title: Καταγραφή μηνύματος!
   - 
-    title: Displaying the exercise history
+    title: Εμφάνιση του ιστορικού άσκησης
