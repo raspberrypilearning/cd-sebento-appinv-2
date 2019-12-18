@@ -26,10 +26,10 @@
 
 ## Πρόκληση: Παρακολούθησε τον τύπο άσκησης
 
-+ How about adding another TextBox that lets the user also record what kind of exercise they did? You'll have to think about what extra code you'll need, such as lists and loops, and how to store the new information in a file.
++ How about adding another TextBox that lets the user also record what kind of exercise they did? Θα πρέπει να σκεφτείς τι επιπλέον κώδικα θα χρειαστείς, όπως λίστες και βρόχους, και πώς θα αποθηκεύσεις τις νέες πληροφορίες σε ένα αρχείο.
 
-+ You can either use the same file (with some extra `join` and `split` code), or a separate one.
++ Μπορείς είτε να χρησιμοποιήσεις το ίδιο αρχείο (με μερικές επιπλέον `join` και `split` εντολές), ή ένα ξεχωριστό.
 
 --- /challenge ---
 
-You can see an example of this app on App Inventor at [dojo.soy/intermedapp](http://dojo.soy/intermedapp){:target="_blank"}.
+Μπορείς να δεις ένα παράδειγμα αυτής της εφαρμογής στο App Inventor στο [dojo.soy/intermedapp](http://dojo.soy/intermedapp){: target = "_ blank"}.
