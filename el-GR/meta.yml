@@ -1,0 +1,23 @@
+---
+title: Παρακολούθηση άσκησης
+hero_image: images/banner.png
+description: Δημιούργησε μια εφαρμογή που θα παρακολουθεί πόση άσκηση κάνεις
+theme: green
+listed: true
+copyedit: true
+curriculum: ''
+interests: ''
+technologies: ''
+site_areas: coderdojo, projects
+hardware: ''
+software: ''
+version: 3.0.0
+last_tested: "2018-04-30"
+steps:
+  - title: Εισαγωγή
+  - title: Καταγραφή άσκησης
+  - title: Υπολογισμός του συνόλου
+  - title: Αποθήκευση των πληροφοριών
+  - title: Επαναφορά
+  - title: Καταγραφή μηνύματος!
+  - title: Εμφάνιση του ιστορικού άσκησης
