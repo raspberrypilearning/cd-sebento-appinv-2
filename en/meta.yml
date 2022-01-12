@@ -1,3 +1,4 @@
+---
 title: Exercise tracker
 hero_image: images/banner.png
 description: Make an app that tracks how much exercise you do
@@ -11,12 +12,14 @@ site_areas: coderdojo, projects
 hardware: ''
 software: ''
 version: 3.0.0
-last_tested: "2018-04-30"
+last_tested: '2018-04-30'
 steps:
-  - title: Introduction
-  - title: Recording exercise
-  - title: Calculating the total
-  - title: Saving the information
-  - title: Resetting
-  - title: Record a message!
-  - title: Displaying the exercise history
+- title: Introduction
+  completion: engaged
+- title: Recording exercise
+- title: Calculating the total
+- title: Saving the information
+- title: Resetting
+- title: Record a message!
+  completion: internal
+- title: Displaying the exercise history
