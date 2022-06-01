@@ -12,12 +12,16 @@ site_areas: coderdojo, projects
 hardware: ''
 software: ''
 version: 3.0.0
-last_tested: "2018-04-30"
+last_tested: '2018-04-30'
 steps:
-  - title: Εισαγωγή
-  - title: Καταγραφή άσκησης
-  - title: Υπολογισμός του συνόλου
-  - title: Αποθήκευση των πληροφοριών
-  - title: Επαναφορά
-  - title: Καταγραφή μηνύματος!
-  - title: Εμφάνιση του ιστορικού άσκησης
+- title: Εισαγωγή
+- title: Καταγραφή άσκησης
+- title: Υπολογισμός του συνόλου
+  completion:
+  - engaged
+- title: Αποθήκευση των πληροφοριών
+- title: Επαναφορά
+- title: Καταγραφή μηνύματος!
+- title: Εμφάνιση του ιστορικού άσκησης
+  completion:
+  - internal
