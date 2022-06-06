@@ -15,11 +15,13 @@ version: 3.0.0
 last_tested: '2018-04-30'
 steps:
 - title: Εισαγωγή
-  completion: engaged
 - title: Καταγραφή άσκησης
 - title: Υπολογισμός του συνόλου
+  completion:
+  - engaged
 - title: Αποθήκευση των πληροφοριών
 - title: Επαναφορά
 - title: Καταγραφή μηνύματος!
-  completion: internal
 - title: Εμφάνιση του ιστορικού άσκησης
+  completion:
+  - internal

@@ -15,11 +15,13 @@ version: 3.0.0
 last_tested: '2018-04-30'
 steps:
 - title: Introduction
-  completion: engaged
 - title: Recording exercise
 - title: Calculating the total
+  completion:
+  - engaged
 - title: Saving the information
 - title: Resetting
 - title: Record a message!
-  completion: internal
 - title: Displaying the exercise history
+  completion:
+  - internal
