@@ -2,17 +2,17 @@
 title: تتبيع التمرين
 hero_image: images/banner.png
 description: اصنع تطبيقًا يتتبع مقدار التمارين التي تقوم بها
-theme: أخضر
+theme: green
 listed: true
 copyedit: true
 curriculum: ''
 interests: ''
 technologies: ''
-site_areas: مشاريع (CoderDojo)
+site_areas: coderdojo, projects
 hardware: ''
 software: ''
 version: 3.0.0
-last_tested: "2018-04-30"
+last_tested: '2018-04-30'
 steps:
   - 
     title: المقدمة
@@ -20,6 +20,8 @@ steps:
     title: تسجيل التمرين
   - 
     title: حساب المجموع
+    completion:
+      - engaged
   - 
     title: حفظ المعلومات
   - 
@@ -28,3 +30,5 @@ steps:
     title: تسجيل رسالة!
   - 
     title: عرض تاريخ التمرين
+    completion:
+      - internal
