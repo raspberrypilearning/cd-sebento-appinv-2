@@ -1,48 +1,48 @@
-## Record a message!
+## Grava uma mensagem!
 
-Getting fit isn't easy: sometimes it can be hard to motivate yourself to go and exercise. How about letting the user record a message that they can play whenever they need some extra motivation?
+Ficar em forma não é fácil: por vezes pode ser difícil encontrares motivação para fazeres exercícios. Que tal deixares o utilizador gravar uma mensagem que ele possa reproduzir quando precisar de motivação extra?
 
-+ Go to the Designer view and add two more Buttons to your app. Set their labels to `Play motivational message` and `Record`, or something similar.
++ Vai para o Editor de Ecrãs e adiciona mais dois botões. Define o texto de cada um para `Tocar mensagem motivacional` e `Gravar`, ou algo semelhante.
 
-+ Then, from **Media**, add a **Sound** and a **SoundRecorder** component. Just like the File component, these won't be visible on the screen.
++ Depois, de **Multimédia**, adiciona um componente **Som** e um **Gravador**. Tal como o componente Ficheiro, estes não vão ser visíveis no ecrã.
 
-+ In Blocks, add a `when Button.TouchDown` block and a `when Button.TouchUp` block for the `Record` button. This time, you're not going to detect the usual click of the button. Instead, you're going to start recording when the user presses and holds the button, and you'll stop recording when they stop pressing.
++ Em Blocos, adiciona os blocos `quando Botão.ToqueParaBaixo` e `quando Botão.ToqueParaCima` para o botão `Gravar`. Desta vez, não irás detetar o clique habitual do botão. Em vez disso, irás começar a gravar quando o utilizador pressionar e segurar o botão, e parar a gravação quando ele parar de pressionar.
 
-+ Add `call SoundRecorder.Start` to the `TouchDown` block, and `call SoundRecorder.Stop` to the `TouchUp` block, like this:
++ Adiciona o `chamar Gravador1.Iniciar` ao bloco `ToqueParaBaixo`, e o `chamar Gravador1.Parar` ao bloco `ToqueParaCima`, desta forma:
 
 ![](images/s7StartStop.png)
 
-Now you can record sound, you need to set up the Sound component to play it!
+Agora que podes gravar sons, precisas de configurar o componente Som para reproduzi-los!
 
-+ Drag out the `when SoundRecorder.AfterSoundRecorded` block.
++ Arrasta para fora o bloco `quando Gravador1.DepoisDeGravar`.
 
-+ In the Sound component, find the `set Sound1.Source to` block and put that inside the block you just took out.
++ No componente Som, encontra o bloco `ajustar Som1.Fonte para` e coloca-o dentro do bloco que acabaste de arrastar.
 
-The `AfterSoundRecorded` block has a variable called `sound`. This is the where you tell the block where for find the sound file you've recorded.
+O bloco `DepoisDeGravar` tem uma variável chamada `som`. Aqui é quando informas ao bloco onde pode encontrar o ficheiro de som que gravaste.
 
-+ Hover over the `sound` variable and take the `get sound` block to attach on as the source for the Sound component:
++ Passa o cursor sobre a variável `som` e tira o bloco `obter som` para anexá-lo como fonte do componente Som:
 
 ![](images/s7AfterRecordSetSource.png)
 
-+ Finally, take out a `Button.Click` block for the `Play` button. In it, put a `call Sound1.Play` from the Sound component.
++ Por fim, tira o bloco `Botão.Clique` para o botão `Tocar`. Dentro dele, põe o `chamar Som1.Tocar` do componente Som.
 
 ![](images/s7PlaySound.png)
 
-+ Test out the app and have some fun recording and playing back your own motivational messages!
++ Testa a aplicação e diverte-te a gravar e reproduzir as tuas mensagens motivacionais!
 
 --- challenge ---
 
-## Challenge: save the sound
+## Desafio: guarda o som
 
-- See if you can use a File component to make the app remember the location of the sound file to play.
+- Vê, se podes usar o componente Ficheiro para fazer a aplicação lembrar-se da localização do ficheiro de som para reproduzi-lo.
 
 --- hints ---
 
 --- hint ---
 
-+ Use another File component and a separate file called something else, for example `MotivationalMessage.txt`.
++ Usa outro componente Ficheiro e um ficheiro separado com outro nome, por exemplo, `MensagemMotivacional.txt`.
 
-+ Use a `SaveFile` block instead of `AppendToFile`, so that you always overwrite the previous file with the new recording.
++ Usa o bloco `GuardarOFicheiro` em vez do `AcrescentarAoFicheiro`, para que consigas sempre substituir o ficheiro anterior com a nova gravação.
 
 --- /hint ---
 
