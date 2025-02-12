@@ -1,48 +1,48 @@
-## Calculating the total
+## Calcular o total
 
-+ Create another global variable called `totalTime`.
++ Cria outra variável global chamada `tempoTotal`.
 
-+ Attach the `0` block from Math to initialise the variable to `0`.
++ Anexa o bloco `0` da Matemática para iniciar a variável a `0`.
 
 ![](images/s4TotalTimeInit.png)
 
-Every time you save a new time, you are going to add it to the value of `totalTime`.
+Cada vez que adicionar um novo tempo, vai adicionar o valor ao `tempoTotal`.
 
-+ Hover over the `totalTime` variable and grab a `set global totalTime to` block. Attach it below the `add items to list` block.
++ Passa o cursor pela variável `tempoTotal` e tira o bloco `ajustar global tempoTotal para`. Coloca-o por baixo do bloco `adicionar elementos à lista`.
 
-+ From Math, take the `+` block and attach it to `set global totalTime to`.
++ Da Matemática, tira o bloco `+` e coloca-o no `ajustar global tempoTotal para`.
 
 ![](images/s4PlusBlock.png)
 
-+ On the left side of the `+`, plug in a `get global totalTime` block. On the right side, plug in `get mins`.
++ No lado esquerdo do `+`, coloca o bloco `obter global tempoTotal`. No lado direito, coloca o `obter min`.
 
 --- collapse ---
 ---
-title: I can't find the blocks!
+title: Não consigo encontrar os blocos!
 ---
 
-You can find the `get` and `set` blocks for a variable by hovering the mouse over the name of the variable in the orange `initialise` block.
+Podes encontrar o bloco `obter` e o `ajustar` de uma variável ao passar com o cursor por cima do nome dessa variável no bloco laranja `inicializar`.
 
 ![](images/s4BlocksForVar.png)
 
-You can also use the `get` and `set` blocks located in Variables, and then click the little arrow in each block to choose your variable.
+Também podes usar os blocos `obter` e o `ajustar` localizados nas Variáveis e, em seguida, clica na seta pequena em cada bloco para escolher a variável.
 
 ![](images/s4GetSetBlank.png)
 
 --- /collapse ---
 
-Now, display the total so the user can see it!
+Agora, mostra o total para que o utilizador consiga vê-lo!
 
-+ Go back to the Designer view and add two more labels to your app. Set the Text property of the first one to `Total minutes exercised:`
++ Volta para o Editor de Ecrãs e adiciona mais duas Legendas à tua aplicação. Define a propriedade Texto do primeiro para `Total de minutos exercitados:`
 
-+ Change the Text property of the second label so that it's blank, and make a note of this label's name (for example, Label2) so that you can set it to the total in your code!
++ Altera a propriedade Texto da segunda Legenda para que fique em branco, e anota o nome dessa Legenda (por exemplo, Legenda2) para que consigas defini-la como Total no teu código!
 
-+ If you want to, change the size and colour of the labels. I've made mine blue and checked **FontBold** to make them bold, and I changed the **FontSize** of the second label to `50`!
++ Se quiseres, altera o tamanho e a cor das Legendas. Deixei as minhas a azul e marquei a **FonteNegrito** para ficarem a negrito, e mudei o **TamanhoDaFonte** da segunda Legenda para `50`!
 
-+ Switch back to Blocks and add a `set Label.Text to` block to your code, together with a `get global totalTime` block (choose the label name you made a note of above!).
++ Volta para Blocos e adiciona o bloco ao teu código `ajustar Legenda.Texto para` juntamente com o bloco `obter global tempoTotal` (escolhe o nome da Legenda que anotaste acima!).
 
 ![](images/s4DisplayTotalTime.png)
 
-Here's what your code should look like:
+Este é o aspeto que o teu código deve ter:
 
 ![](images/s4DisplayTotalCode.png)
