@@ -1,41 +1,41 @@
-## Introduction
+## Introdução
 
-These cards are going to show you how to use App Inventor to make an app that tracks how much exercise you've done.
+Estes cartões vão mostrar-te como usar o App Inventor para criar uma aplicação que registe a quantidade de exercícios fizeste.
 
 
-### What you will make
+### O que vais fazer
 
- * You'll end up with something that looks like this:
+ * O resultado será algo parecido com isto:
 
 ![](images/fitnessAppScreenshot.png)
 
 --- collapse ---
 ---
-title: What you will learn
+title: O que vais aprender
 ---
 
-+ Taking text input from the user and display it
-+ Storing information in a list
-+ Using a loop to read the elements of a list
-+ Saving information to a file on the phone
-+ Loading and displaying information from a file
-+ Making your own procedures
-+ Using the phone's sound recorder and play back a sound you've recorded
++ Receber texto introduzido pelo utilizador e exibi-lo
++ Armazenar informações numa lista
++ Usar um ciclo para ler os elementos de uma lista
++ Guardar informações num ficheiro do telemóvel
++ Carregar e exibir informações de um ficheiro
++ Criar os teus próprios procedimentos
++ Usar o gravador de som do telemóvel e reproduzir o som que gravaste
 
 --- /collapse ---
 
 --- collapse ---
 ---
-title: What you will need
+title: O que vais precisar
 ---
 
-### Hardware
+### Equipamento
 
-+ A computer capable of accessing App Inventor
-+ An internet connection
++ Um computador capaz de aceder ao App Inventor
++ Conexão à Internet
 
-**Optional:**
+**Opcional:**
 
-+ An Android phone or tablet
++ Um telemóvel Android ou tablet
 
 --- /collapse ---
