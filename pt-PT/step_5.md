@@ -1,43 +1,43 @@
-## Resetting
+## Reiniciar
 
-If you're anything like me, you might want a way of deleting all the previously entered data and starting the tracking again at zero. Let's add a button to let you do that!
+Se fores como eu, talvez queiras uma forma de apagar todos os dados inseridos anteriormente e começar a monitorizar do zero novamente. Vamos adicionar um botão que te permita fazê-lo!
 
-+ In the Designer view, add a Button. Change its label to `Reset`.
++ No Editor de Ecrãs, adiciona um botão. Altera o seu nome para `Repor`.
 
-+ Go to Blocks and add a `when Button Click` block for the new button.
++ Vai para Blocos e adiciona o bloco `quando Botao.clique` para o novo botão.
 
-+ Into this block, add `call File1.Delete` with a Text block giving the file name `ExerciseTracker.txt`.
++ Neste bloco, adiciona `chamar Ficheiro1.Apagar` com um bloco de Texto contendo o nome do ficheiro `MonitorTreino.txt`.
 
 ![](images/s6FileDelete.png)
 
-Now you will create a brand-new block of your own!
+Agora vais criar um bloco novinho em folha!
 
-+ Click on **Procedures** in the Built-in blocks and drag out a `to procedure do` block.
++ Clica em **Procedimentos** nos blocos Internos e arrasta o bloco `para procedimento fazer`.
 
 ![](images/s6NewProc.png)
 
-+ Click the `procedure` label and change it to `resetEverything`.
++ Clica no nome do `procedimento` e altera-o para `reporTudo`.
 
 --- collapse ---
 ---
-title: What is a procedure?
+title: O que é um procedimento?
 ---
 
-A procedure is a bunch of code that you can **reuse** easily.
+Um procedimento é um conjunto de código que podes **reutilizar** facilmente.
 
-Instead of duplicating the same blocks in several places, you put all of them into one block called a procedure. Then you can use just that one block whenever you want to run these blocks!
+Em vez de duplicar os mesmos blocos em diversos sítios, juntasse tudo num só bloco e é chamado de procedimento. Podes então, usar apenas um bloco sempre que quiseres executar aqueles blocos!
 
-You can give a procedure any name you want.
+Podes dar a um procedimento o nome que quiseres.
 
 --- /collapse ---
 
-+ Inside the `resetEverything` block, add blocks to set the global `minutesList` to a new empty list, set the global `totalTime` to `0`, and display the new total:
++ Dentro do bloco `reporTudo`, adiciona os blocos para definir a global `listaMinutos` para uma nova lista vazia, define a global `tempoTotal` para `0`, e exibir o novo total:
 
 ![](images/s6ResetProc.png)
 
-+ Finally, in the `when Button Click` block of the button you've just made, add the block `call resetEverything` from Procedures.
++ Por fim, no bloco do botão que criaste `quando Botão.Clique`, adiciona o bloco `chamar reporTudo` de Procedimentos.
 
 ![](images/s6CallReset.png)
 
-Now you should be able to clear all the recorded exercise by clicking the new button!
+Agora deves conseguir limpar todos os registos de exercícios ao clicar no novo botão!
 
