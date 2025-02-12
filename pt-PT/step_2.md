@@ -1,53 +1,53 @@
-## Recording exercise
+## Registar os exercícios
 
-+ Create a new project and give it a name, for example `GetFit`.
++ Cria um novo projeto e atribui-lhe um nome, por exemplo `FicarEmForma`.
 
-+ Click on Screen1 under Components and change the Title property to `Track your exercise here!`.
++ Clica no Ecrã1 na secção Componentes e altera a propriedade Título para `Regista o teu treino aqui!`.
 
-+ Find the TextBox component in the Palette (under **User Interface**) and add it to your app, along with a Button.
++ Encontra o componente CaixaDeTexto na secção Paleta (na **Interface de Usuário**) e adiciona-o à tua aplicação, juntamente com um Botão.
 
-+ Change the **Text** property of the button to `Enter`.
++ Altera a propriedade **Texto** do Botão para `Registar`.
 
-+ To arrange the components side by side, drag a **HorizontalArrangement** onto the screen (you'll find it in **Layout**) and drag the TextBox and Button into it.
++ Para arranjar os componentes lado a lado, arrasta uma **OrganizaçãoHorizontal** para o ecrã (vais encontrá-la na **Organização**) e arrasta a CaixaDeTexto e o Botão para lá.
 
 ![](images/s3Horizontal.png)
 
-+ Find the **Hint** property for the TextBox and type `Minutes`. This will appear faintly in the textbox if the user hasn't typed anything in yet, so they know what to type.
++ Encontra a propriedade **Dica** da CaixaDeTexto e escreve `Minutos`. Isto vai aparecer levemente na CaixaDeTexto se o utilizador ainda não tiver escrito nada, para que saiba o que escrever.
 
-+ Check the box that says 'NumbersOnly' so that only a number can be entered in the TextBox.
++ Marca a opção que diz 'SomenteNúmeros' para que apenas seja possível introduzir números na CaixaDeTexto.
 
 ![](images/s3HintNumsOnly.png)
 
-Great! The user can type in the number of minutes they exercised for. Now you want to save that information when they press the button.
+Ótimo! O utilizador pode escrever o número de minutos durante os quais se exercitou. Agora queres guardar essa informação quando pressionarem o botão.
 
-+ Switch to the Blocks and take out a `when Button.Click` block.
++ Muda para Blocos e junta o bloco `quando Botão.Clique`.
 
-+ The first thing you'll need is to create a **local** variable to store the TextBox value in. Grab the `initialise local name to` block from Variables, and slot it into the `when Button Click` block.
++ A primeira coisa que vais precisar é criar uma variável **local** para armazenar o valor da CaixaDeTexto. Agarra no bloco `inicializar local nome para` em Variáveis, e coloca-o dentro do bloco `quando Botão.Clique`.
 
-+ Then click where it says `name` and instead type `mins` to name your local variable.
++ De seguida, clica onde diz `nome` e troca para `min` para atribuir um nome à tua variável local.
 
 ![](images/s3LocalVar.png)
 
-+ Take out a `Textbox.Text` block and attach it onto the `initialise local mins` block to store what's been typed into the TextBox.
++ Tira um bloco `CaixaDeTexto.Texto` e adiciona-o dentro do bloco `inicializar local min` para armazenar o que for escrito na CaixaDeTexto.
 
-Now that you've retrieved this information, you're going to create a **list** to put it in. After all, you want to be able to record lots of exercise sessions!
+Agora que retiveste esta informação, vais criar uma **lista** para armazená-la. No final das contas, vais querer registar muitas sessões de exercícios!
 
-+ At the top of your code, add an `initialize global name to` block, and name it `minutesList`. Then find the `create empty list` block from Lists and use it to initialise your list.
++ Na parte superior do teu código, adiciona um bloco `inicializar global nome para`, e chama-o de `listaMinutos`. Depois encontra o bloco `criar lista vazia` em Listas e usa-o para inicializar a tua lista.
 
 ![](images/s3CreateEmptyList.png)
 
-+ From Lists, take the block `add items to list` and put it into your local variable block.
++ Em Listas, retira o bloco `adicionar elementos à lista` e coloca-o dentro do bloco da tua variável local.
 
 ![](images/s3AddItemsBlock.png)
 
-You need to attach two things to this block: the list you want to add something to, and the 'something' you want to add, meaning the **item**.
+Precisas de anexar duas coisas a este bloco: a lista à qual queres adicionar algo e o 'algo' que queres adicionar, ou seja, o **elemento**.
 
-+ Hover over the name of your global list variable and grab the `get global minutesList` block that appears. Connect this to the `list` attachment of the `add items to list` block.
++ Passa o cursor sobre o nome da tua variável global da lista e agarra o bloco que aparece `obter global listaMinutos`. Anexa-o à `lista` do bloco `adicionar elementos à lista`.
 
 ![](images/s3GetGlobalList.png)
 
-+ Then do the same with the local variable, `mins`, to attach a `get mins` block to the **item** part of `add items to list`.
++ A seguir, faz o mesmo à variável local, `min`, e adiciona o bloco `obter min` na parte do **item** do `adicionar elementos à lista`.
 
 ![](images/s3AddItemToList.png)
 
-On the next card, you'll add all the list items together to work out the total amount of exercise you've done!
+No próximo cartão, irás adicionar todos os elementos da lista para calcular a quantidade total de exercícios que praticaste!
