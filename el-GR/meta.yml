@@ -3,7 +3,7 @@ title: Παρακολούθηση άσκησης
 hero_image: images/banner.png
 description: Δημιούργησε μια εφαρμογή που θα παρακολουθεί πόση άσκηση κάνεις
 theme: green
-listed: true
+listed: false
 copyedit: true
 curriculum: ''
 interests: ''
