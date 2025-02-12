@@ -1,7 +1,7 @@
 ---
-title: Exercise tracker
+title: Monitor de Treino
 hero_image: images/banner.png
-description: Make an app that tracks how much exercise you do
+description: Cria uma aplicação que monitorize a quantidade de exercícios que fazes
 theme: green
 listed: false
 copyedit: true
@@ -15,20 +15,20 @@ version: 3.0.0
 last_tested: '2018-04-30'
 steps:
   - 
-    title: Introduction
+    title: Introdução
   - 
-    title: Recording exercise
+    title: Registar os exercícios
   - 
-    title: Calculating the total
+    title: Calcular o total
     completion:
       - engaged
   - 
-    title: Saving the information
+    title: Armazenar a informação
   - 
-    title: Resetting
+    title: Reiniciar
   - 
-    title: Record a message!
+    title: Grava uma mensagem!
   - 
-    title: Displaying the exercise history
+    title: Exibir o histórico de treinos
     completion:
       - internal
