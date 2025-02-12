@@ -3,7 +3,7 @@ title: تتبيع التمرين
 hero_image: images/banner.png
 description: اصنع تطبيقًا يتتبع مقدار التمارين التي تقوم بها
 theme: green
-listed: true
+listed: false
 copyedit: true
 curriculum: ''
 interests: ''
