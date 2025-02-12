@@ -1,0 +1,27 @@
+---
+title: Monitor de Treino
+hero_image: images/banner.png
+description: Cria uma aplicação que monitorize a quantidade de exercícios que fazes
+theme: green
+listed: false
+copyedit: true
+curriculum: ''
+interests: ''
+technologies: ''
+site_areas: coderdojo, projects
+hardware: ''
+software: ''
+version: 3.0.0
+last_tested: '2018-04-30'
+steps:
+  - title: Introdução
+  - title: Registar os exercícios
+  - title: Calcular o total
+    completion:
+      - engaged
+  - title: Armazenar a informação
+  - title: Reiniciar
+  - title: Grava uma mensagem!
+  - title: Exibir o histórico de treinos
+    completion:
+      - internal
