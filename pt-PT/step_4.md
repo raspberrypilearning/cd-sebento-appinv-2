@@ -1,98 +1,98 @@
-## Saving the information
+## Armazenar a informação
 
-Right now, your app only saves information so long as the app is running. It would be much more useful for it to remember your exercise times even after you close the app and restart it, right? To do this, you will store the information in a file on the phone or tablet, and read from this file every time the app starts.
+Por agora, a tua aplicação apenas guarda a informação enquanto estiver em execução. Seria muito mais útil se guardasse o tempo dos exercícios, mesmo depois de a fechar ou reiniciar, certo? Para tal, precisas de armazenar a informação num ficheiro no teu telemóvel ou tablet, e lidas a partir desse ficheiro sempre que a aplicação for iniciada.
 
-+ In the Designer view, add a **File** component to your app. You'll find it in **Storage**. This is an invisible component, so you won't see it on the screen.
++ No Editor de Ecrãs, adiciona o componente **Ficheiro** à tua aplicação. Podes encontrá-lo em **Armazenamento**. É um componente invisível, por isso não o verás no ecrã.
 
 ![](images/s5StorageFile.png)
 
-+ Now go to Blocks and click on File1 to get the block `call File1.AppendToFile`. Add this to your code after the `set Label.Text to` block.
++ Volta para Blocos e clica no Ficheiro1 para obteres o bloco `chamar Ficheiro1.AcrescentarAoFicheiro`. Adiciona-o ao teu código depois do bloco `ajustar Legenda.Texto para`.
 
 ![](images/s5AppendToFile.png)
 
 
 --- collapse ---
 ---
-title: What does the new block do?
+title: O que faz o novo bloco?
 ---
 
-This block takes two **parameters**. A parameter is a piece of information that you give a block. Usually, the block will do something with that information.
+Este bloco contém dois **parâmetros**. Um parâmetro é um pedaço de informação que se dá a um bloco. Normalmente, o bloco fará algo com essa informação.
 
-The first parameter, `text`, is the text that you want to store in a file. The second, `fileName` is the name of the file you want to use for storage.
+O primeiro parâmetro, `texto`, é o texto que pretendes armazenar num ficheiro. O segundo, `nomeDoFicheiro` é o nome do ficheiro que pretendes usar para armazenar.
 
-The code will take the text you give it and add it to the end of the text in the file. The really handy thing is that if the file doesn't exist yet, the block will create it for you first.
+O código recebe o texto que lhe dás e adiciona-o ao fim do texto no ficheiro. O que é realmente útil é que, se o ficheiro ainda não existir, o bloco vai criá-lo primeiro por ti.
 
 --- /collapse ---
 
-+ For the `fileName` parameter, attach a `""` block from Text, and type in `ExerciseTracker.txt`.
++ Para o parâmetro `nomeDoFicheiro`, adiciona o bloco `""` do Texto, e escreve `MonitorTreino.txt`.
 
-+ For the `text` parameter, attach a `join` block, a `get mins` block, and another blank `""` Text block. Type `\n` into the blank text block (make sure you use a backslash ``\` and **not** a forward slash``/`).
++ Para o parâmetro `texto`, adiciona o bloco `juntar`, o bloco `obter min` e outro bloco `""` vazio do Texto. Escreve `\n` no bloco de texto vazio (certifica-te que usas a barra invertida `\` e **não** a barra <0>/</0>).
 
 ![](images/s5JoinMinsNewline.png)
 
 --- collapse ---
 ---
-title: What did I just type?
+title: O que acabei de escrever?
 ---
 
-The symbol `\n` is a special combination of characters used when you want to go onto a new line in a text.
+O símbolo `\n` é uma combinação especial de caracteres que é usada quando pretendes passar para uma nova linha num texto.
 
-Your code is taking the number of minutes that the user typed in, and adding a new line at the end before saving it to the file.
+O teu código recebe o número de minutos que o utilizador escreveu e adiciona uma nova linha no final antes de guardar o ficheiro.
 
-That means that each time the user enters a number of minutes, it will be saved on a separate line in the text file you've named `ExerciseTracker.txt`.
+Isto significa que, cada vez que o utilizador inserir um número de minutos, esses serão guardados numa linha separada no texto do ficheiro que nomeaste de `MonitorTreino.txt`.
 
 --- /collapse ---
 
-Now you've saved data to the file, you need to read that data whenever the app loads!
+Agora que guardaste informação no ficheiro, precisas de ler a informação sempre que a aplicação carregar!
 
-+ Take a `when Screen1.initialise` block, and add in `call File1.readFrom`, attaching a Text block with the file name `ExerciseTracker.txt` typed in as before.
++ Procura pelo bloco `quando Ecra1.inicializar` e adiciona-lhe o `chamar Ficheiro1.LerDe`, anexa um bloco de Texto com o nome do ficheiro `MonitorTreino.txt` que escreveste antes.
 
 ![](images/s5ScreenInit.png)
 
-This call is **asynchronous**, meaning it will go and read the file and then tell you when it's done.
+Isto é chamado **assíncrona**, que significa que lerá o ficheiro e depois informará quando tiver terminado a tarefa.
 
-+ From File1, take out a `when File1.GotText` block.
++ Do Ficheiro1, retira o bloco `quando Ficheiro1.RcebeuTexto`.
 
-The `text` variable contains all the text from the file. You will use this to fill the **list** variable you created to collect the minutes. But first, you need to split it up to separate each line.
+A variável `texto` contém todo o texto do ficheiro. Irás usar isto para preencher a variável **lista** que criaste para receber os minutos. Mas primeiro, é preciso dividi-lo para separar cada linha.
 
-+ Add the following blocks inside the `GotText`:
++ Adiciona os seguintes blocos dentro do `RecebeuTexto`:
 
 ![](images/s5GotTextSplit.png)
 
 --- collapse ---
 ---
-title: How does splitting work?
+title: Como funciona a repartição?
 ---
 
-The `split` block takes one piece of text and splits it into several separate pieces.
+O bloco `repartir` pega num pedaço do texto e reparte-o em diversas partes.
 
-Imagine you have one big long text, and it's made up of a bunch of pieces all joined together with dots in between. Using the `split` block would allow you to break this text up into the separate pieces of text and remove the dots.
+Imagina que tens um texto grande e longo, que é composto por várias partes unidas por pontos entres elas. Ao usar o bloco `repartir` consegues repartir esse texto em partes separadas de texto e remover os pontos.
 
-What you put into the `at` decides how the text gets split.
+O que escreveres no `em` decide como o texto será repartido.
 
-It searches the text for the value in the `at` block, and each time it finds it, it 'chops off' another piece of the text. The text that matches the value of `at` is removed in the process.
+Procura no texto pelo valor do bloco `em`, e cada vez que encontrar, corta outro pedaço do texto. O texto que corresponder ao valor de `em` é removido no processo.
 
-What you get back is a list containing a bunch of separate pieces of text!
+O que recebes é uma lista que contêm várias partes separadas do texto!
 
 --- /collapse ---
 
-Now you will sum up all the minutes you just loaded from the file and display the total.
+Agora vais somar todos os minutos que acabaste de carregar do ficheiro e exibir o total.
 
-+ Under the `set global minutesList`, add code to set the global variable `totalTime` to `0`:
++ Debaixo do `ajustar global listaMinutos`, adiciona código para ajustar a variável global `tempoTotal` para `0`:
 
 ![](images.s5SetTotalZero.png)
 
-+ In the Control blocks, find the block `for each item in list`, and attach a `get global minutesList` to it.
++ Nos blocos de Controle, encontra o bloco `para cada elemento na lista`, e adiciona-lhe o `obter global listaMinutos`.
 
 ![](images/s5ForEach.png)
 
-+ Inside this, add a `set global totalTime to` block, and then a `+` block with `get global totalTime` on the left. Remember, you did this before to add something to the total. The only difference this time around is that the variable you put on the right of the `+`: the current `item` of the list.
++ Dentro do mesmo bloco, adiciona `ajustar global tempoTotal`, e depois um bloco `+` com `obter global tempoTotal` na esquerda. Lembra-te, já fizeste isto antes para adicionar algo ao total. A única diferença é que, desta vez a variável é colocada à direita do `+`: o atual `elemento` da lista.
 
 ![](images.s5ForEachItemIterate.png)
 
-+ Finally, add `set Label.Text to` the and `get global totalTime` block as before.
++ Por fim, adiciona o bloco `ajustar Legenda2.Texto para` e o `obter global tempoTotal`, como já fizeste antes.
 
-+ Here's what your `GotText` block should look like now. Test out your app to make sure it all works!
++ Este é o aspeto que o teu bloco `RecebeuTexto` deve ter agora. Testa a tua aplicação para teres a certeza que tudo funciona!
 
 ![](images/s5GotTextAll.png)
 
